@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>
+    element-ui踩坑点 | 小俊的个人博客
+  </title>
+  <meta name="description" content="小俊的个人博客是一个记录工作中总结的经验和一些新知识学习新尝试的个人开发纪实博客,主要关注web前端以及全栈技术的学习和研究。">
+  
+  <meta name="keywords" content="
+  
+  ">
+  
+  <meta name="author" content="小俊">
+
+  <meta http-equiv="Cache-Control" content="no-transform"/>
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+  <meta name="theme-color" content="#1e2327">
+  <link rel="apple-touch-icon" href="https://github.githubassets.com/apple-touch-icon.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://github.githubassets.com/apple-touch-icon-180x180.png">
+
+  <link rel="icon" type="image/x-icon" href="https://github.githubassets.com/favicon.ico">
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+
+  
+
+  <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body id="replica-app">
+
+<nav class="navbar-wrapper">
+  <div class="navbar">
+    <div class="container clearfix">
+      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
+
+      <div class="navbar-search float-left desktop-only">
+        <div class="navbar-search-form">
+          <label for="gsc-i-id1">This website</label>
+          <div id="google-search">
+            <gcse:search></gcse:search>
+          </div>
+        </div>
+      </div>
+
+      <ul class="navbar-nav float-left">
+        
+        <li><a href="/">Archives</a></li>
+        
+        
+        <li><a href="/">Categories</a></li>
+        
+        
+        <li><a href="/">Tags</a></li>
+        
+        
+        <li class="desktop-only"><a href="/atom.xml" target="_blank">RSS</a></li>
+        
+      </ul>
+
+      <ul class="navbar-nav user-nav float-right desktop-only">
+        <li class="user-nav-notification">
+          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
+        </li>
+        <li>
+          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
+        </li>
+        <li class="user-nav-logo">
+          <a><img src="https://octodex.github.com/images/baracktocat.jpg"> <i class="fa fa-caret-down"></i></i></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="main-container">
+  <header class="header-wrapper desktop-only">
+  <div class="container header-site-detail">
+    <ul class="header-toolbar">
+      <li class="clearfix">
+        <a href="/" class="header-toolbar-left"><i
+                  class="fa fa-file-text"></i> Posts </a>
+        <a href="/"
+           class="header-toolbar-right"> 16 </a>
+      </li>
+      <li>
+        <a href="/" class="header-toolbar-left"><i
+                  class="fa fa-tags"></i> Tags </a>
+        <a href="/"
+           class="header-toolbar-right"> 2 </a>
+      </li>
+      <li>
+        <a href="/" class="header-toolbar-left"><i
+                  class="fa fa-folder-open"></i> Categories </a>
+        <a href="/"
+           class="header-toolbar-right"> 0 </a>
+      </li>
+    </ul>
+    <h2 class="header-title">
+      <i class="fa fa-book text-muted"></i>
+      <a href="/">小俊的个人博客</a>
+      
+      
+    </h2>
+  </div>
+
+  <div class="container">
+    <div class="header-tab-wrapper clearfix">
+      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
+      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
+      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
+      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
+      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    </div>
+  </div>
+</header>
+
+
+<div class="post-container container">
+  <h3>
+    <i class="fa fa-user-o"></i>
+    小俊
+
+    <span class="post-date float-right" title="{{moment(1676772037000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      
+          <i class="fa fa-pencil-square-o"></i>
+      
+      {{moment(1676772037000).fromNow()}}
+    </span>
+  </h3>
+
+  <article class="post-content">
+    <h1>element-ui踩坑点</h1>
+    <p>本文主要整理element-ui踩坑点<br>注：文章内容相对而言有一定的难度，所以需要读者有一定的基础。另外，若文章有何不妥之处或者你有任何疑问，欢迎留言讨论。 </p>
+<h1 id="一、组件样式"><a href="#一、组件样式" class="headerlink" title="一、组件样式"></a>一、组件样式</h1><p>饿了么组件库中有需求改组件样式的坑点，有很细心的前端小伙伴用控制台来选择元素，选择到需要更改的元素的时候已经看见这个元素使用的class，但在我们代码中用这个class名有时候写上却无法修改该元素的样式</p>
+<p><img src="https://raw.githubusercontent.com/770746548/770746548.github.io/master/images/image-20230210162443277.png" alt="image-20230210162443277"></p>
+<p>首先，我们复制该元素class名为 .el-table_3_column_8 is-center  .el-table__cell</p>
+<p>此时，我们直接用这个样式写上去无法生效，则我们可以采用以下深度选择器进行修改样式</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">::v-deep .<span class="property">el</span>-table_3_column_8 is-center  .<span class="property">el</span>-table__cell&#123;<span class="comment">//第一种方法::v-deep</span></span><br><span class="line">    <span class="comment">//写上你要更改的样式</span></span><br><span class="line">    <span class="attr">boder</span>:1px soild red;<span class="comment">//将单元格的边框设为1px实线红色，这样我们就修改完成了</span></span><br><span class="line">&#125;</span><br><span class="line">/deep/ .<span class="property">el</span>-table_3_column_8 is-center  .<span class="property">el</span>-table__cell&#123;<span class="comment">//第一种方法::v-deep</span></span><br><span class="line">    <span class="comment">//写上你要更改的样式</span></span><br><span class="line">    <span class="attr">boder</span>:1px soild red;<span class="comment">//将单元格的边框设为1px实线红色，这样我们就修改完成了</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+  </article>
+</div>
+
+
+    
+
+
+
+
+</div>
+
+<div class="footer-wrapper container">
+  <footer class="footer clearfix">
+    <div class="clearfix">
+    <a href="https://770746548.github.io" class="footer-logo">
+      <i class="fa fa-github"></i>
+    </a>
+    <ul class="footer-social-link">
+      <li>© 2019 小俊</li>
+      <li><a href="https://770746548.github.io">Home</a></li>
+      
+    </ul>
+    <div class="footer-theme-info">
+      Theme <a target="_blank" rel="noopener" href="//github.com/sabrinaluo/hexo-theme-replica">Replica</a>
+      by <a target="_blank" rel="noopener" href="//github.com/sabrinaluo">Hiitea</a> ❤ Powered by Hexo
+    </div>
+    </div>
+    
+  </footer>
+</div>
+
+
+
+
+<script src="/js/main.js"></script>
+
+</body>
+</html>

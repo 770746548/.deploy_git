@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>🔥 vue面试专题 | 小俊的个人博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="Vue 面试专题简述MVVM什么是MVVM？ 视图模型双向绑定，是Model-View-ViewModel的缩写，也就是把MVC中的Controller演变成ViewModel。Model层代表数据模型，View代表UI组件，ViewModel是View和Model层的桥梁，数据会绑定到viewModel层并自动将数据渲染到页面中，视图变化的时候会通知viewModel层更新数据。以前是操作DOM">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha256-Z1K5uhUaJXA7Ll0XrZ/0JhX4lAtZFpT6jkKrEDT0drU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"770746548.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.14.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="Vue 面试专题简述MVVM什么是MVVM？ 视图模型双向绑定，是Model-View-ViewModel的缩写，也就是把MVC中的Controller演变成ViewModel。Model层代表数据模型，View代表UI组件，ViewModel是View和Model层的桥梁，数据会绑定到viewModel层并自动将数据渲染到页面中，视图变化的时候会通知viewModel层更新数据。以前是操作DOM">
 <meta property="og:type" content="article">
 <meta property="og:title" content="🔥 vue面试专题">
 <meta property="og:url" content="https://770746548.github.io/2023/02/28/vue%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98/index.html">
@@ -20,84 +33,169 @@
 <meta property="article:tag" content="前端八股文">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://gitee.com/xjxjxj123/xiaojun-personal-blog/raw/master/images/a7249773a1634f779c48f3f0ffabf968~tplv-k3u1fbpfcp-zoom-1.image">
-  
-    <link rel="alternate" href="/atom.xml" title="小俊的个人博客" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<link rel="canonical" href="https://770746548.github.io/2023/02/28/vue%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98/">
 
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">小俊的个人博客</a>
-      </h1>
-      
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://770746548.github.io/2023/02/28/vue%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98/","path":"2023/02/28/vue面试专题/","title":"🔥 vue面试专题"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>🔥 vue面试专题 | 小俊的个人博客</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="小俊的个人博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">小俊的个人博客</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://770746548.github.io"></form>
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Vue-%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98"><span class="nav-number">1.</span> <span class="nav-text">Vue 面试专题</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%80%E8%BF%B0MVVM"><span class="nav-number">1.1.</span> <span class="nav-text">简述MVVM</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vue%E5%BA%95%E5%B1%82%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86"><span class="nav-number">1.2.</span> <span class="nav-text">Vue底层实现原理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%B0%88%E8%B0%88%E5%AF%B9vue%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F%E7%9A%84%E7%90%86%E8%A7%A3%EF%BC%9F"><span class="nav-number">1.3.</span> <span class="nav-text">谈谈对vue生命周期的理解？</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%84%E4%BB%B6%E7%94%9F%E5%91%BD%E5%91%A8%E6%9C%9F"><span class="nav-number">1.3.1.</span> <span class="nav-text">组件生命周期</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#computed%E4%B8%8Ewatch"><span class="nav-number">1.4.</span> <span class="nav-text">computed与watch</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E7%BB%84%E4%BB%B6%E4%B8%AD%E7%9A%84data%E4%B8%BA%E4%BB%80%E4%B9%88%E6%98%AF%E4%B8%80%E4%B8%AA%E5%87%BD%E6%95%B0%EF%BC%9F"><span class="nav-number">1.4.1.</span> <span class="nav-text">组件中的data为什么是一个函数？</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88v-for%E5%92%8Cv-if%E4%B8%8D%E5%BB%BA%E8%AE%AE%E7%94%A8%E5%9C%A8%E4%B8%80%E8%B5%B7"><span class="nav-number">1.4.2.</span> <span class="nav-text">为什么v-for和v-if不建议用在一起</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#React-x2F-Vue-%E9%A1%B9%E7%9B%AE%E4%B8%AD-key-%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-number">1.5.</span> <span class="nav-text">React&#x2F;Vue 项目中 key 的作用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%95%B0%E7%BB%84%E6%89%81%E5%B9%B3%E5%8C%96%E8%BD%AC%E6%8D%A2"><span class="nav-number">1.6.</span> <span class="nav-text">数组扁平化转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vue%E7%BB%84%E4%BB%B6%E7%9A%84%E9%80%9A%E4%BF%A1%E6%96%B9%E5%BC%8F"><span class="nav-number">1.7.</span> <span class="nav-text">vue组件的通信方式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#emit-%E5%90%8E%E9%9D%A2%E7%9A%84%E4%B8%A4%E4%B8%AA%E5%8F%82%E6%95%B0%E6%98%AF%E4%BB%80%E4%B9%88"><span class="nav-number">1.8.</span> <span class="nav-text">$emit 后面的两个参数是什么</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nextTick%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.9.</span> <span class="nav-text">nextTick的实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#nextTick%E7%9A%84%E5%AE%9E%E7%8E%B0%E5%8E%9F%E7%90%86%E6%98%AF%E4%BB%80%E4%B9%88%EF%BC%9F"><span class="nav-number">1.10.</span> <span class="nav-text">nextTick的实现原理是什么？</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E8%BF%87%E6%8F%92%E6%A7%BD%E4%B9%88%EF%BC%9F%E7%94%A8%E7%9A%84%E6%98%AF%E5%85%B7%E5%90%8D%E6%8F%92%E6%A7%BD%E8%BF%98%E6%98%AF%E5%8C%BF%E5%90%8D%E6%8F%92%E6%A7%BD%E6%88%96%E4%BD%9C%E7%94%A8%E5%9F%9F%E6%8F%92%E6%A7%BD"><span class="nav-number">1.11.</span> <span class="nav-text">使用过插槽么？用的是具名插槽还是匿名插槽或作用域插槽</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#keep-alive%E7%9A%84%E5%AE%9E%E7%8E%B0"><span class="nav-number">1.12.</span> <span class="nav-text">keep-alive的实现</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#keep-alive-%E7%9A%84%E5%B1%9E%E6%80%A7"><span class="nav-number">1.13.</span> <span class="nav-text">keep-alive 的属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#mixin"><span class="nav-number">1.14.</span> <span class="nav-text">mixin</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#vue-%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0%E6%A8%A1%E6%8B%9F-v-model-%E6%8C%87%E4%BB%A4"><span class="nav-number">1.15.</span> <span class="nav-text">vue 如何实现模拟 v-model 指令</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%A6%82%E4%BD%95%E5%AE%9E%E7%8E%B0-v-model-%E8%AF%B4%E4%B8%8B%E6%80%9D%E8%B7%AF"><span class="nav-number">1.16.</span> <span class="nav-text">如何实现 v-model,说下思路</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vue-Router-%E7%9B%B8%E5%85%B3"><span class="nav-number">1.17.</span> <span class="nav-text">Vue Router 相关</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Vuex%E7%9A%84%E7%90%86%E8%A7%A3%E5%8F%8A%E4%BD%BF%E7%94%A8%E5%9C%BA%E6%99%AF"><span class="nav-number">1.18.</span> <span class="nav-text">Vuex的理解及使用场景</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">小俊</p>
+  <div class="site-description" itemprop="description">小俊的个人博客是一个记录工作中总结的经验和一些新知识学习新尝试的个人开发纪实博客,主要关注web前端以及全栈技术的学习和研究。</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
       </div>
     </div>
-  </div>
-</header>
 
-      <div class="outer">
-        <section id="main"><article id="post-vue面试专题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/02/28/vue%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98/" class="article-date">
-  <time class="dt-published" datetime="2023-02-28T01:00:00.000Z" itemprop="datePublished">2023-02-28</time>
-</a>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      🔥 vue面试专题
-    </h1>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
   
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://770746548.github.io/2023/02/28/vue%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="小俊">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小俊的个人博客">
+      <meta itemprop="description" content="小俊的个人博客是一个记录工作中总结的经验和一些新知识学习新尝试的个人开发纪实博客,主要关注web前端以及全栈技术的学习和研究。">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="🔥 vue面试专题 | 小俊的个人博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          🔥 vue面试专题
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
       
+
+      <time title="Created: 2023-02-28 09:00:00 / Modified: 10:55:15" itemprop="dateCreated datePublished" datetime="2023-02-28T09:00:00+08:00">2023-02-28</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
         <h2 id="Vue-面试专题"><a href="#Vue-面试专题" class="headerlink" title="Vue 面试专题"></a>Vue 面试专题</h2><h3 id="简述MVVM"><a href="#简述MVVM" class="headerlink" title="简述MVVM"></a>简述MVVM</h3><p><strong>什么是MVVM？</strong></p>
 <p><code>视图模型双向绑定</code>，是<code>Model-View-ViewModel</code>的缩写，也就是把<code>MVC</code>中的<code>Controller</code>演变成<code>ViewModel。Model</code>层代表数据模型，<code>View</code>代表UI组件，<code>ViewModel</code>是<code>View</code>和<code>Model</code>层的桥梁，数据会绑定到<code>viewModel</code>层并自动将数据渲染到页面中，视图变化的时候会通知<code>viewModel</code>层更新数据。以前是操作DOM结构更新视图，现在是<code>数据驱动视图</code>。</p>
 <p><strong>MVVM的优点：</strong></p>
@@ -207,150 +305,92 @@
 <p>就像计算属性一样，getter 的返回值会根据它的依赖被缓存起来， 且只有当它的依赖值发生了改变才会被重新计算 3. Mutation：是唯一更改 store 中状态的方法，且必须是同步函数 4. Action：用于提交 mutation，而不是直接变更状态，可以包含任意异步操作 5. Module：允许将单一的 Store 拆分为多个 store 且同时保存在单一的状态树中</p>
 <p><img src="https://gitee.com/xjxjxj123/xiaojun-personal-blog/raw/master/images/a7249773a1634f779c48f3f0ffabf968~tplv-k3u1fbpfcp-zoom-1.image"></p>
 
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="https://770746548.github.io/2023/02/28/vue%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98/" data-id="clentxa1m000fjwmh4dpnha8o" data-title="🔥 vue面试专题" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/" rel="tag">前端八股文</a></li></ul>
 
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/" rel="tag"># 前端八股文</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/02/28/%E6%B5%8F%E8%A7%88%E5%99%A8/" rel="prev" title="🔥 浏览器">
+                  <i class="fa fa-chevron-left"></i> 🔥 浏览器
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2023/02/28/react/" rel="next" title="🔥 react">
+                  🔥 react <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小俊</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2023/02/28/react/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          🔥 react
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2023/02/28/%E6%B5%8F%E8%A7%88%E5%99%A8/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">🔥 浏览器</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/" rel="tag">前端八股文</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" rel="tag">前端基础</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/" style="font-size: 20px;">前端八股文</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">前端基础</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/02/28/TypeScript/">🔥 TypeScript</a>
-          </li>
-        
-          <li>
-            <a href="/2023/02/28/HTML+CSS/">🔥 HTML &amp;&amp; CSS</a>
-          </li>
-        
-          <li>
-            <a href="/2023/02/28/JavaScript/">🔥 JavaScript</a>
-          </li>
-        
-          <li>
-            <a href="/2023/02/28/react/">🔥 react</a>
-          </li>
-        
-          <li>
-            <a href="/2023/02/28/vue%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98/">🔥 vue面试专题</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 小俊<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
 
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
+  </footer>
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
   </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+  
+
+
+
+
+
 </body>
 </html>

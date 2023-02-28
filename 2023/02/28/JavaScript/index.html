@@ -1,12 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  
-  
-  <title>🔥 JavaScript | 小俊的个人博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="JavaScriptJS中的8种数据类型及区别包括值类型(基本对象类型)和引用类型(复杂对象类型) 基本类型(值类型)： Number(数字),String(字符串),Boolean(布尔),Symbol(符号),null(空),undefined(未定义)在内存中占据固定大小，保存在栈内存中 引用类型(复杂数据类型)： Object(对象)、Function(函数)。其他还有Array(数组)、">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 6.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha256-Z1K5uhUaJXA7Ll0XrZ/0JhX4lAtZFpT6jkKrEDT0drU=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"770746548.github.io","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.14.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="JavaScriptJS中的8种数据类型及区别包括值类型(基本对象类型)和引用类型(复杂对象类型) 基本类型(值类型)： Number(数字),String(字符串),Boolean(布尔),Symbol(符号),null(空),undefined(未定义)在内存中占据固定大小，保存在栈内存中 引用类型(复杂数据类型)： Object(对象)、Function(函数)。其他还有Array(数组)、">
 <meta property="og:type" content="article">
 <meta property="og:title" content="🔥 JavaScript">
 <meta property="og:url" content="https://770746548.github.io/2023/02/28/JavaScript/index.html">
@@ -21,84 +34,169 @@
 <meta property="article:tag" content="前端八股文">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/342e581223d2471d9484fc48beb9f8e1~tplv-k3u1fbpfcp-zoom-1.image">
-  
-    <link rel="alternate" href="/atom.xml" title="小俊的个人博客" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
 
-  
-  
-<link rel="stylesheet" href="/css/style.css">
 
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+<link rel="canonical" href="https://770746548.github.io/2023/02/28/JavaScript/">
 
-  
-<meta name="generator" content="Hexo 6.3.0"></head>
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">小俊的个人博客</a>
-      </h1>
-      
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"https://770746548.github.io/2023/02/28/JavaScript/","path":"2023/02/28/JavaScript/","title":"🔥 JavaScript"}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>🔥 JavaScript | 小俊的个人博客</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+<link rel="alternate" href="/atom.xml" title="小俊的个人博客" type="application/atom+xml">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="Toggle navigation bar" role="button">
     </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">小俊的个人博客</p>
+      <i class="logo-line"></i>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="Search" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+</header>
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://770746548.github.io"></form>
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          Table of Contents
+        </li>
+        <li class="sidebar-nav-overview">
+          Overview
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#JavaScript"><span class="nav-number">1.</span> <span class="nav-text">JavaScript</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#JS%E4%B8%AD%E7%9A%848%E7%A7%8D%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E5%8F%8A%E5%8C%BA%E5%88%AB"><span class="nav-number">1.1.</span> <span class="nav-text">JS中的8种数据类型及区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JS%E4%B8%AD%E7%9A%84%E6%95%B0%E6%8D%AE%E7%B1%BB%E5%9E%8B%E6%A3%80%E6%B5%8B%E6%96%B9%E6%A1%88"><span class="nav-number">1.2.</span> <span class="nav-text">JS中的数据类型检测方案</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-typeof"><span class="nav-number">1.2.1.</span> <span class="nav-text">1.typeof</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-instanceof"><span class="nav-number">1.2.2.</span> <span class="nav-text">2.instanceof</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#3-Object-prototype-toString-call"><span class="nav-number">1.2.3.</span> <span class="nav-text">3.Object.prototype.toString.call()</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#instanceof-%E7%9A%84%E4%BD%9C%E7%94%A8"><span class="nav-number">1.2.4.</span> <span class="nav-text">instanceof 的作用</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#instanceof-%E5%92%8C-typeof-%E7%9A%84%E5%8C%BA%E5%88%AB%EF%BC%9A"><span class="nav-number">1.2.5.</span> <span class="nav-text">instanceof 和 typeof 的区别：</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#var-amp-amp-let-amp-amp-const"><span class="nav-number">1.3.</span> <span class="nav-text">var &amp;&amp; let &amp;&amp; const</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BD%9C%E7%94%A8%E5%9F%9F%E5%92%8C%E4%BD%9C%E7%94%A8%E5%9F%9F%E9%93%BE"><span class="nav-number">1.4.</span> <span class="nav-text">作用域和作用域链</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E9%97%AD%E5%8C%85%E7%9A%84%E4%B8%A4%E5%A4%A7%E4%BD%9C%E7%94%A8%EF%BC%9A%E4%BF%9D%E5%AD%98-x2F-%E4%BF%9D%E6%8A%A4"><span class="nav-number">1.5.</span> <span class="nav-text">闭包的两大作用：保存&#x2F;保护</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#JS-%E4%B8%AD-this-%E7%9A%84%E6%83%85%E5%86%B5"><span class="nav-number">1.6.</span> <span class="nav-text">JS 中 this 的情况</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#call-x2F-apply-x2F-bind-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">1.7.</span> <span class="nav-text">call&#x2F;apply&#x2F;bind 的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E7%AE%AD%E5%A4%B4%E5%87%BD%E6%95%B0%E7%9A%84%E7%89%B9%E6%80%A7"><span class="nav-number">1.8.</span> <span class="nav-text">箭头函数的特性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%8E%9F%E5%9E%8B-amp-amp-%E5%8E%9F%E5%9E%8B%E9%93%BE"><span class="nav-number">1.9.</span> <span class="nav-text">原型 &amp;&amp; 原型链</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#new%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E5%AE%9E%E7%8E%B0%E6%9C%BA%E5%88%B6"><span class="nav-number">1.10.</span> <span class="nav-text">new运算符的实现机制</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#EventLoop-%E4%BA%8B%E4%BB%B6%E5%BE%AA%E7%8E%AF"><span class="nav-number">1.11.</span> <span class="nav-text">EventLoop 事件循环</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6%E7%8E%AF%EF%BC%88Event-Loop"><span class="nav-number">1.11.1.</span> <span class="nav-text">浏览器中的事件环（Event Loop)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Node-%E7%8E%AF%E5%A2%83%E4%B8%AD%E7%9A%84%E4%BA%8B%E4%BB%B6%E7%8E%AF%EF%BC%88Event-Loop"><span class="nav-number">1.11.2.</span> <span class="nav-text">Node 环境中的事件环（Event Loop)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#setTimeout%E3%80%81Promise%E3%80%81Async-x2F-Await-%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">1.12.</span> <span class="nav-text">setTimeout、Promise、Async&#x2F;Await 的区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Async-x2F-Await-%E5%A6%82%E4%BD%95%E9%80%9A%E8%BF%87%E5%90%8C%E6%AD%A5%E7%9A%84%E6%96%B9%E5%BC%8F%E5%AE%9E%E7%8E%B0%E5%BC%82%E6%AD%A5"><span class="nav-number">1.13.</span> <span class="nav-text">Async&#x2F;Await 如何通过同步的方式实现异步</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%BB%8B%E7%BB%8D%E8%8A%82%E6%B5%81%E9%98%B2%E6%8A%96%E5%8E%9F%E7%90%86%E3%80%81%E5%8C%BA%E5%88%AB%E4%BB%A5%E5%8F%8A%E5%BA%94%E7%94%A8"><span class="nav-number">1.14.</span> <span class="nav-text">介绍节流防抖原理、区别以及应用</span></a></li></ol></li></ol></div>
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">小俊</p>
+  <div class="site-description" itemprop="description">小俊的个人博客是一个记录工作中总结的经验和一些新知识学习新尝试的个人开发纪实博客,主要关注web前端以及全栈技术的学习和研究。</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">16</span>
+          <span class="site-state-item-name">posts</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
+  </nav>
+</div>
+
+        </div>
       </div>
     </div>
-  </div>
-</header>
 
-      <div class="outer">
-        <section id="main"><article id="post-JavaScript" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2023/02/28/JavaScript/" class="article-date">
-  <time class="dt-published" datetime="2023-02-28T01:00:00.000Z" itemprop="datePublished">2023-02-28</time>
-</a>
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      🔥 JavaScript
-    </h1>
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
   
 
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="en">
+    <link itemprop="mainEntityOfPage" href="https://770746548.github.io/2023/02/28/JavaScript/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="小俊">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小俊的个人博客">
+      <meta itemprop="description" content="小俊的个人博客是一个记录工作中总结的经验和一些新知识学习新尝试的个人开发纪实博客,主要关注web前端以及全栈技术的学习和研究。">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="🔥 JavaScript | 小俊的个人博客">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          🔥 JavaScript
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
       
+
+      <time title="Created: 2023-02-28 09:00:00 / Modified: 10:48:18" itemprop="dateCreated datePublished" datetime="2023-02-28T09:00:00+08:00">2023-02-28</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
         <h2 id="JavaScript"><a href="#JavaScript" class="headerlink" title="JavaScript"></a>JavaScript</h2><h3 id="JS中的8种数据类型及区别"><a href="#JS中的8种数据类型及区别" class="headerlink" title="JS中的8种数据类型及区别"></a>JS中的8种数据类型及区别</h3><p>包括值类型(基本对象类型)和引用类型(复杂对象类型)</p>
 <p><strong>基本类型(值类型)：</strong> Number(数字),String(字符串),Boolean(布尔),Symbol(符号),null(空),undefined(未定义)在内存中占据固定大小，保存在栈内存中</p>
 <p><strong>引用类型(复杂数据类型)：</strong> Object(对象)、Function(函数)。其他还有Array(数组)、Date(日期)、RegExp(正则表达式)、特殊的基本包装类型(String、Number、Boolean) 以及单体内置对象(Global、Math)等 引用类型的值是对象 保存在堆内存中，栈内存存储的是对象的变量标识符以及对象在堆内存中的存储地址。</p>
@@ -281,150 +379,92 @@
 <p><code>防抖</code>：多次触发事件，事件处理函数只能执行一次，并且是在触发操作结束时执行。也就是说，当一个事件被触发准备执行事件函数前，会等待一定的时间（这时间是码农自己去定义的，比如 1 秒），如果没有再次被触发，那么就执行，如果被触发了，那就本次作废，重新从新触发的时间开始计算，并再次等待 1 秒，直到能最终执行！</p>
 <p><code>使用场景</code>：<br>节流：滚动加载更多、搜索框搜的索联想功能、高频点击、表单重复提交……<br>防抖：搜索框搜索输入，并在输入完以后自动搜索、手机号，邮箱验证输入检测、窗口大小 resize 变化后，再重新渲染。</p>
 <figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 节流函数 一个函数执行一次后，只有大于设定的执行周期才会执行第二次。有个需要频繁触发的函数，出于优化性能的角度，在规定时间内，只让函数触发的第一次生效，后面的不生效。</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> fn要被节流的函数</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> delay规定的时间</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">throttle</span>(<span class="params">fn, delay</span>) &#123;</span><br><span class="line">    <span class="comment">//记录上一次函数触发的时间</span></span><br><span class="line">    <span class="keyword">var</span> lastTime = <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">        <span class="comment">//记录当前函数触发的时间</span></span><br><span class="line">        <span class="keyword">var</span> nowTime = <span class="title class_">Date</span>.<span class="title function_">now</span>();</span><br><span class="line">        <span class="keyword">if</span>(nowTime - lastTime &gt; delay)&#123;</span><br><span class="line">            <span class="comment">//修正this指向问题</span></span><br><span class="line">            fn.<span class="title function_">call</span>(<span class="variable language_">this</span>);</span><br><span class="line">            <span class="comment">//同步执行结束时间</span></span><br><span class="line">            lastTime = nowTime;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="variable language_">document</span>.<span class="property">onscroll</span> = <span class="title function_">throttle</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;scllor事件被触发了&#x27;</span> + <span class="title class_">Date</span>.<span class="title function_">now</span>());</span><br><span class="line">&#125;, <span class="number">200</span>); </span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 防抖函数  一个需要频繁触发的函数，在规定时间内，只让最后一次生效，前面的不生效</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> fn要被节流的函数</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> delay规定的时间</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">debounce</span>(<span class="params">fn, delay</span>) &#123;</span><br><span class="line">    <span class="comment">//记录上一次的延时器</span></span><br><span class="line">    <span class="keyword">var</span> timer = <span class="literal">null</span>;</span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">       <span class="comment">//清除上一次的演示器</span></span><br><span class="line">        <span class="built_in">clearTimeout</span>(timer);</span><br><span class="line">        <span class="comment">//重新设置新的延时器</span></span><br><span class="line">        timer = <span class="built_in">setTimeout</span>(<span class="keyword">function</span>(<span class="params"></span>)&#123;</span><br><span class="line">            <span class="comment">//修正this指向问题</span></span><br><span class="line">            fn.<span class="title function_">apply</span>(<span class="variable language_">this</span>);</span><br><span class="line">        &#125;, delay); </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&#x27;btn&#x27;</span>).<span class="property">onclick</span> = <span class="title function_">debounce</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;按钮被点击了&#x27;</span> + <span class="title class_">Date</span>.<span class="title function_">now</span>());</span><br><span class="line">&#125;, <span class="number">1000</span>);</span><br></pre></td></tr></table></figure>
-      
     </div>
-    <footer class="article-footer">
-      <a data-url="https://770746548.github.io/2023/02/28/JavaScript/" data-id="clentxa1k000bjwmhhw3zah74" data-title="🔥 JavaScript" class="article-share-link">Share</a>
-      
-      
-      
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/" rel="tag">前端八股文</a></li></ul>
 
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/" rel="tag"># 前端八股文</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2023/02/28/react/" rel="prev" title="🔥 react">
+                  <i class="fa fa-chevron-left"></i> 🔥 react
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2023/02/28/HTML+CSS/" rel="next" title="🔥 HTML && CSS">
+                  🔥 HTML && CSS <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
     </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小俊</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a>
   </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2023/02/28/HTML+CSS/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          🔥 HTML &amp;&amp; CSS
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2023/02/28/react/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">🔥 react</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/" rel="tag">前端八股文</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" rel="tag">前端基础</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/" style="font-size: 20px;">前端八股文</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">前端基础</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2023/02/28/TypeScript/">🔥 TypeScript</a>
-          </li>
-        
-          <li>
-            <a href="/2023/02/28/HTML+CSS/">🔥 HTML &amp;&amp; CSS</a>
-          </li>
-        
-          <li>
-            <a href="/2023/02/28/JavaScript/">🔥 JavaScript</a>
-          </li>
-        
-          <li>
-            <a href="/2023/02/28/react/">🔥 react</a>
-          </li>
-        
-          <li>
-            <a href="/2023/02/28/vue%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98/">🔥 vue面试专题</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2023 小俊<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
 
     </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.4.1.min.js"></script>
-
-
+  </footer>
 
   
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
   </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="Back to top">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+  
+
+
+
+
+
 </body>
 </html>

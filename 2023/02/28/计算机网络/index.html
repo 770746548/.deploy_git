@@ -1,147 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>
-    🔥 计算机网络 | 小俊的个人博客
-  </title>
-  <meta name="description" content="小俊的个人博客是一个记录工作中总结的经验和一些新知识学习新尝试的个人开发纪实博客,主要关注web前端以及全栈技术的学习和研究。">
+  <meta charset="utf-8">
   
-  <meta name="keywords" content="
-  前端八股文
-  ">
   
-  <meta name="author" content="小俊">
-
-  <meta http-equiv="Cache-Control" content="no-transform"/>
-  <meta http-equiv="Cache-Control" content="no-siteapp">
-  <meta name="theme-color" content="#1e2327">
-  <link rel="apple-touch-icon" href="https://github.githubassets.com/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://github.githubassets.com/apple-touch-icon-180x180.png">
-
-  <link rel="icon" type="image/x-icon" href="https://github.githubassets.com/favicon.ico">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>🔥 计算机网络 | 小俊的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="推荐个API管理神器 Apipost 用过的都知道好使 HTTP 和 HTTPSHTTP 的基本概念http: 是互联网上应用最为广泛的一种网络协议，是一个客户端和服务器端请求和应答的标准（TCP），用于从 WWW 服务器传输超文本到本地浏览器的超文本传输协议。 HTTP工作原理HTTP协议定义Web客户端如何从Web服务器请求Web页面，以及服务器如何把Web页面传送给客户端。客户端向服务器发送">
+<meta property="og:type" content="article">
+<meta property="og:title" content="🔥 计算机网络">
+<meta property="og:url" content="https://770746548.github.io/2023/02/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/index.html">
+<meta property="og:site_name" content="小俊的个人博客">
+<meta property="og:description" content="推荐个API管理神器 Apipost 用过的都知道好使 HTTP 和 HTTPSHTTP 的基本概念http: 是互联网上应用最为广泛的一种网络协议，是一个客户端和服务器端请求和应答的标准（TCP），用于从 WWW 服务器传输超文本到本地浏览器的超文本传输协议。 HTTP工作原理HTTP协议定义Web客户端如何从Web服务器请求Web页面，以及服务器如何把Web页面传送给客户端。客户端向服务器发送">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c42bc6f45451457fa6d614fb27534516~tplv-k3u1fbpfcp-watermark.image">
+<meta property="og:image" content="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/2fa80b3b48a84bd18d8e708c56a1dc22~tplv-k3u1fbpfcp-watermark.image">
+<meta property="og:image" content="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/baf3d5df95a74f47a1d779ee50c3411f~tplv-k3u1fbpfcp-watermark.image">
+<meta property="og:image" content="https://gitee.com/xjxjxj123/xiaojun-personal-blog/raw/master/images/05b3fe9c411f4881a8b22fe37eae170b~tplv-k3u1fbpfcp-zoom-1.image">
+<meta property="og:image" content="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/5e0ce991db4847b98d9f049f9ffa5c93~tplv-k3u1fbpfcp-watermark.image">
+<meta property="og:image" content="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8ecdc60670194df7957ee59e1f56701f~tplv-k3u1fbpfcp-watermark.image">
+<meta property="og:image" content="https://gitee.com/xjxjxj123/xiaojun-personal-blog/raw/master/images/f756ad3403bc4fe18e970c56677c796e~tplv-k3u1fbpfcp-watermark.image">
+<meta property="og:image" content="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/b67bd1f793a3425d9e8a415cae9b7863~tplv-k3u1fbpfcp-watermark.image">
+<meta property="og:image" content="https://gitee.com/xjxjxj123/xiaojun-personal-blog/raw/master/images/77d8ae8e0de44f3aa693f0626a346d4c~tplv-k3u1fbpfcp-watermark.image">
+<meta property="article:published_time" content="2023-02-28T01:00:00.000Z">
+<meta property="article:modified_time" content="2023-02-28T02:45:04.843Z">
+<meta property="article:author" content="小俊">
+<meta property="article:tag" content="前端八股文">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c42bc6f45451457fa6d614fb27534516~tplv-k3u1fbpfcp-watermark.image">
   
+    <link rel="alternate" href="/atom.xml" title="小俊的个人博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
 
   
+  
+<link rel="stylesheet" href="/css/style.css">
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body id="replica-app">
-
-<nav class="navbar-wrapper">
-  <div class="navbar">
-    <div class="container clearfix">
-      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
-
-      <div class="navbar-search float-left desktop-only">
-        <div class="navbar-search-form">
-          <label for="gsc-i-id1">This website</label>
-          <div id="google-search">
-            <gcse:search></gcse:search>
-          </div>
-        </div>
-      </div>
-
-      <ul class="navbar-nav float-left">
-        
-        <li><a href="/">Archives</a></li>
-        
-        
-        <li><a href="/">Categories</a></li>
-        
-        
-        <li><a href="/">Tags</a></li>
-        
-        
-        <li class="desktop-only"><a href="/atom.xml" target="_blank">RSS</a></li>
-        
-      </ul>
-
-      <ul class="navbar-nav user-nav float-right desktop-only">
-        <li class="user-nav-notification">
-          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
-        </li>
-        <li>
-          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
-        </li>
-        <li class="user-nav-logo">
-          <a><img src="https://octodex.github.com/images/baracktocat.jpg"> <i class="fa fa-caret-down"></i></i></a>
-        </li>
-      </ul>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">小俊的个人博客</a>
+      </h1>
+      
     </div>
-  </div>
-</nav>
-
-<div class="main-container">
-  <header class="header-wrapper desktop-only">
-  <div class="container header-site-detail">
-    <ul class="header-toolbar">
-      <li class="clearfix">
-        <a href="/" class="header-toolbar-left"><i
-                  class="fa fa-file-text"></i> Posts </a>
-        <a href="/"
-           class="header-toolbar-right"> 16 </a>
-      </li>
-      <li>
-        <a href="/" class="header-toolbar-left"><i
-                  class="fa fa-tags"></i> Tags </a>
-        <a href="/"
-           class="header-toolbar-right"> 2 </a>
-      </li>
-      <li>
-        <a href="/" class="header-toolbar-left"><i
-                  class="fa fa-folder-open"></i> Categories </a>
-        <a href="/"
-           class="header-toolbar-right"> 0 </a>
-      </li>
-    </ul>
-    <h2 class="header-title">
-      <i class="fa fa-book text-muted"></i>
-      <a href="/">小俊的个人博客</a>
-      
-      
-    </h2>
-  </div>
-
-  <div class="container">
-    <div class="header-tab-wrapper clearfix">
-      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
-      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
-      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
-      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
-      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://770746548.github.io"></form>
+      </div>
     </div>
   </div>
 </header>
 
+      <div class="outer">
+        <section id="main"><article id="post-计算机网络" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/02/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" class="article-date">
+  <time class="dt-published" datetime="2023-02-28T01:00:00.000Z" itemprop="datePublished">2023-02-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      🔥 计算机网络
+    </h1>
+  
 
-<div class="post-container container">
-  <h3>
-    <i class="fa fa-user-o"></i>
-    小俊
-
-    <span class="post-date float-right" title="{{moment(1677546000000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
       
-      <a class="fa fa-pencil-square-o" href="https://https://770746548.github.io/master/source/_posts/计算机网络.md" target="_blank">
-      </a>
-      
-      {{moment(1677546000000).fromNow()}}
-    </span>
-  </h3>
-
-  <article class="post-content">
-    <h1>🔥 计算机网络</h1>
-    <p>推荐个API管理神器 Apipost 用过的都知道好使</p>
+        <p>推荐个API管理神器 Apipost 用过的都知道好使</p>
 <h1 id="HTTP-和-HTTPS"><a href="#HTTP-和-HTTPS" class="headerlink" title="HTTP 和 HTTPS"></a>HTTP 和 HTTPS</h1><h3 id="HTTP-的基本概念"><a href="#HTTP-的基本概念" class="headerlink" title="HTTP 的基本概念"></a>HTTP 的基本概念</h3><p>http: 是互联网上应用最为广泛的一种网络协议，是一个客户端和服务器端<code>请求和应答的标准（TCP）</code>，用于从 WWW 服务器传输超文本到本地浏览器的<code>超文本传输协议</code>。</p>
 <h3 id="HTTP工作原理"><a href="#HTTP工作原理" class="headerlink" title="HTTP工作原理"></a>HTTP工作原理</h3><p>HTTP协议定义Web客户端如何从Web服务器请求Web页面，以及服务器如何把Web页面传送给客户端。客户端向服务器发送一个请求报文，服务器以一个状态行作为响应。</p>
 <h3 id="HTTP请求-x2F-响应的步骤"><a href="#HTTP请求-x2F-响应的步骤" class="headerlink" title="HTTP请求&#x2F;响应的步骤"></a>HTTP请求&#x2F;响应的步骤</h3><ul>
@@ -608,47 +573,150 @@
 <li>检查特权端口的开放</li>
 </ol>
 
-  </article>
-</div>
-
-
-    
-
-
-
-
-</div>
-
-<div class="footer-wrapper container">
-  <footer class="footer clearfix">
-    <div class="clearfix">
-    <a href="https://770746548.github.io" class="footer-logo">
-      <i class="fa fa-github"></i>
-    </a>
-    <ul class="footer-social-link">
-      <li>© 2019 小俊</li>
-      <li><a href="https://770746548.github.io">Home</a></li>
       
-    </ul>
-    <div class="footer-theme-info">
-      Theme <a target="_blank" rel="noopener" href="//github.com/sabrinaluo/hexo-theme-replica">Replica</a>
-      by <a target="_blank" rel="noopener" href="//github.com/sabrinaluo">Hiitea</a> ❤ Powered by Hexo
     </div>
-    </div>
+    <footer class="article-footer">
+      <a data-url="https://770746548.github.io/2023/02/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" data-id="clens55z7000kzkmh9s5j5y35" data-title="🔥 计算机网络" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/" rel="tag">前端八股文</a></li></ul>
+
+    </footer>
+  </div>
+  
     
-    <div class="footer-pageview">
-        <a target="_blank" rel="noopener" href="https://https://770746548.github.io/flag">
-          <img src="https://https://770746548.github.io/img">
-        </a>
-    </div>
+<nav id="article-nav">
+  
+    <a href="/2023/02/28/%E6%B5%8F%E8%A7%88%E5%99%A8/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          🔥 浏览器
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/02/21/note/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">react综合归类</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
     
-  </footer>
-</div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/" rel="tag">前端八股文</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" rel="tag">前端基础</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/" style="font-size: 20px;">前端八股文</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">前端基础</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/02/28/TypeScript/">🔥 TypeScript</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/28/HTML+CSS/">🔥 HTML &amp;&amp; CSS</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/28/JavaScript/">🔥 JavaScript</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/28/react/">🔥 react</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/28/vue%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98/">🔥 vue面试专题</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 小俊<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
 
 
 
 
-<script src="/js/main.js"></script>
+<script src="/js/script.js"></script>
 
+
+
+
+
+  </div>
 </body>
 </html>

@@ -1,147 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-
-
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <title>
-    react综合归类 | 小俊的个人博客
-  </title>
-  <meta name="description" content="小俊的个人博客是一个记录工作中总结的经验和一些新知识学习新尝试的个人开发纪实博客,主要关注web前端以及全栈技术的学习和研究。">
+  <meta charset="utf-8">
   
-  <meta name="keywords" content="
   
-  ">
+  <title>react综合归类 | 小俊的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="js数据类型 判断数据类型方法12345678910111213基本数据类型： string number boolean null undefined symbol 和BigInt引用数据类型：Object基本数据类型存放于栈中，引用数据类型的引用指针地址存放于栈，实体部分存放于堆中instanceof 构造函数的 prototype 属性是否在某个实例对象的原型链上,返回Booleantype">
+<meta property="og:type" content="article">
+<meta property="og:title" content="react综合归类">
+<meta property="og:url" content="https://770746548.github.io/2023/02/21/note/index.html">
+<meta property="og:site_name" content="小俊的个人博客">
+<meta property="og:description" content="js数据类型 判断数据类型方法12345678910111213基本数据类型： string number boolean null undefined symbol 和BigInt引用数据类型：Object基本数据类型存放于栈中，引用数据类型的引用指针地址存放于栈，实体部分存放于堆中instanceof 构造函数的 prototype 属性是否在某个实例对象的原型链上,返回Booleantype">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="c:\Users\joker\AppData\Roaming\Typora\typora-user-images\image-20221020135330903.png">
+<meta property="og:image" content="c:\Users\joker\AppData\Roaming\Typora\typora-user-images\image-20221020135533760.png">
+<meta property="og:image" content="https://img-blog.csdnimg.cn/2020042623230374.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80Mzg3MTUwMA==,size_16,color_FFFFFF,t_70#pic_center">
+<meta property="og:image" content="c:\Users\joker\AppData\Roaming\Typora\typora-user-images\image-20230216170551173.png">
+<meta property="article:published_time" content="2023-02-21T01:00:00.000Z">
+<meta property="article:modified_time" content="2023-02-27T10:03:17.244Z">
+<meta property="article:author" content="小俊">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="c:\Users\joker\AppData\Roaming\Typora\typora-user-images\image-20221020135330903.png">
   
-  <meta name="author" content="小俊">
+    <link rel="alternate" href="/atom.xml" title="小俊的个人博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
 
-  <meta http-equiv="Cache-Control" content="no-transform"/>
-  <meta http-equiv="Cache-Control" content="no-siteapp">
-  <meta name="theme-color" content="#1e2327">
-  <link rel="apple-touch-icon" href="https://github.githubassets.com/apple-touch-icon.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://github.githubassets.com/apple-touch-icon-180x180.png">
-
-  <link rel="icon" type="image/x-icon" href="https://github.githubassets.com/favicon.ico">
-  <link rel="stylesheet" href="/css/main.css">
-  <link rel="stylesheet"
-        href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   
+  
+<link rel="stylesheet" href="/css/style.css">
 
   
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
 
-  <script src="//cdnjs.cloudflare.com/ajax/libs/vue/1.0.25-csp/vue.min.js"></script>
-  <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.11.2/moment.min.js"></script>
+  
 <meta name="generator" content="Hexo 6.3.0"></head>
 
-<body id="replica-app">
-
-<nav class="navbar-wrapper">
-  <div class="navbar">
-    <div class="container clearfix">
-      <a href="/" class="navbar-logo"><i class="fa fa-github"></i></a>
-
-      <div class="navbar-search float-left desktop-only">
-        <div class="navbar-search-form">
-          <label for="gsc-i-id1">This website</label>
-          <div id="google-search">
-            <gcse:search></gcse:search>
-          </div>
-        </div>
-      </div>
-
-      <ul class="navbar-nav float-left">
-        
-        <li><a href="/">Archives</a></li>
-        
-        
-        <li><a href="/">Categories</a></li>
-        
-        
-        <li><a href="/">Tags</a></li>
-        
-        
-        <li class="desktop-only"><a href="/atom.xml" target="_blank">RSS</a></li>
-        
-      </ul>
-
-      <ul class="navbar-nav user-nav float-right desktop-only">
-        <li class="user-nav-notification">
-          <a><span class="user-nav-unread"></span><i class="fa fa-bell"></i></a>
-        </li>
-        <li>
-          <a><i class="fa fa-plus"></i> <i class="fa fa-caret-down"></i></a>
-        </li>
-        <li class="user-nav-logo">
-          <a><img src="https://octodex.github.com/images/baracktocat.jpg"> <i class="fa fa-caret-down"></i></i></a>
-        </li>
-      </ul>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">小俊的个人博客</a>
+      </h1>
+      
     </div>
-  </div>
-</nav>
-
-<div class="main-container">
-  <header class="header-wrapper desktop-only">
-  <div class="container header-site-detail">
-    <ul class="header-toolbar">
-      <li class="clearfix">
-        <a href="/" class="header-toolbar-left"><i
-                  class="fa fa-file-text"></i> Posts </a>
-        <a href="/"
-           class="header-toolbar-right"> 16 </a>
-      </li>
-      <li>
-        <a href="/" class="header-toolbar-left"><i
-                  class="fa fa-tags"></i> Tags </a>
-        <a href="/"
-           class="header-toolbar-right"> 2 </a>
-      </li>
-      <li>
-        <a href="/" class="header-toolbar-left"><i
-                  class="fa fa-folder-open"></i> Categories </a>
-        <a href="/"
-           class="header-toolbar-right"> 0 </a>
-      </li>
-    </ul>
-    <h2 class="header-title">
-      <i class="fa fa-book text-muted"></i>
-      <a href="/">小俊的个人博客</a>
-      
-      
-    </h2>
-  </div>
-
-  <div class="container">
-    <div class="header-tab-wrapper clearfix">
-      <span class="header-tab header-tab-selected"><i class="fa fa-thumbs-o-up"></i> Like</span>
-      <span class="header-tab"><i class="fa fa-share-alt"></i> Share</span>
-      <span class="header-tab"><i class="fa fa-comments-o"></i> Discussion</span>
-      <span class="header-tab"><i class="fa fa-bookmark-o"></i> Bookmark </span>
-      <span class="header-tab"><i class="fa fa-smile-o"></i> Smile <i class="fa fa-caret-down"></i></span>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://770746548.github.io"></form>
+      </div>
     </div>
   </div>
 </header>
 
+      <div class="outer">
+        <section id="main"><article id="post-note" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2023/02/21/note/" class="article-date">
+  <time class="dt-published" datetime="2023-02-21T01:00:00.000Z" itemprop="datePublished">2023-02-21</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      react综合归类
+    </h1>
+  
 
-<div class="post-container container">
-  <h3>
-    <i class="fa fa-user-o"></i>
-    小俊
-
-    <span class="post-date float-right" title="{{moment(1676941200000).format('MMM DD, YYYY, h:mm:ss A')}}">
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
       
-      <a class="fa fa-pencil-square-o" href="https://https://770746548.github.io/master/source/_posts/note.md" target="_blank">
-      </a>
-      
-      {{moment(1676941200000).fromNow()}}
-    </span>
-  </h3>
-
-  <article class="post-content">
-    <h1>react综合归类</h1>
-    <h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2><h5 id="数据类型-判断数据类型方法"><a href="#数据类型-判断数据类型方法" class="headerlink" title="数据类型 判断数据类型方法"></a>数据类型 判断数据类型方法</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">基本数据类型： string number boolean <span class="literal">null</span> <span class="literal">undefined</span> symbol 和<span class="title class_">BigInt</span></span><br><span class="line">引用数据类型：<span class="title class_">Object</span></span><br><span class="line"></span><br><span class="line">基本数据类型存放于栈中，引用数据类型的引用指针地址存放于栈，实体部分存放于堆中</span><br><span class="line"><span class="keyword">instanceof</span> 构造函数的 prototype 属性是否在某个实例对象的原型链上,返回<span class="title class_">Boolean</span></span><br><span class="line"><span class="keyword">typeof</span> 返回一个字符串，表示操作数的类型</span><br><span class="line">		<span class="keyword">typeof</span> <span class="literal">undefined</span>  <span class="string">&#x27;undefined&#x27;</span></span><br><span class="line">		<span class="keyword">typeof</span> <span class="literal">null</span>  <span class="string">&#x27;object&#x27;</span></span><br><span class="line">		<span class="keyword">typeof</span> <span class="title class_">Symbol</span> <span class="string">&#x27;function&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>() <span class="string">&#x27;[object Null]&#x27;</span> <span class="string">&#x27;[object Undefined]&#x27;</span> </span><br><span class="line">jquery.<span class="title function_">type</span>()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+        <h2 id="js"><a href="#js" class="headerlink" title="js"></a>js</h2><h5 id="数据类型-判断数据类型方法"><a href="#数据类型-判断数据类型方法" class="headerlink" title="数据类型 判断数据类型方法"></a>数据类型 判断数据类型方法</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">基本数据类型： string number boolean <span class="literal">null</span> <span class="literal">undefined</span> symbol 和<span class="title class_">BigInt</span></span><br><span class="line">引用数据类型：<span class="title class_">Object</span></span><br><span class="line"></span><br><span class="line">基本数据类型存放于栈中，引用数据类型的引用指针地址存放于栈，实体部分存放于堆中</span><br><span class="line"><span class="keyword">instanceof</span> 构造函数的 prototype 属性是否在某个实例对象的原型链上,返回<span class="title class_">Boolean</span></span><br><span class="line"><span class="keyword">typeof</span> 返回一个字符串，表示操作数的类型</span><br><span class="line">		<span class="keyword">typeof</span> <span class="literal">undefined</span>  <span class="string">&#x27;undefined&#x27;</span></span><br><span class="line">		<span class="keyword">typeof</span> <span class="literal">null</span>  <span class="string">&#x27;object&#x27;</span></span><br><span class="line">		<span class="keyword">typeof</span> <span class="title class_">Symbol</span> <span class="string">&#x27;function&#x27;</span></span><br><span class="line"></span><br><span class="line"><span class="title class_">Object</span>.<span class="property"><span class="keyword">prototype</span></span>.<span class="property">toString</span>.<span class="title function_">call</span>() <span class="string">&#x27;[object Null]&#x27;</span> <span class="string">&#x27;[object Undefined]&#x27;</span> </span><br><span class="line">jquery.<span class="title function_">type</span>()</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
 <h5 id="this"><a href="#this" class="headerlink" title="this"></a>this</h5><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">this代表函数运行时，自动生成的一个内部对象，只能在函数内部使用，</span><br><span class="line">随着函数使用场合的不同，this的值会发生变化。</span><br><span class="line"></span><br><span class="line">指向:</span><br><span class="line">1.在方法中，this 表示该方法所属的对象。</span><br><span class="line">2.如果单独使用，this 表示全局对象。</span><br><span class="line">3.函数中，this 表示全局对象。</span><br><span class="line">4.严格模式下，this 是未定义的(undefined)。</span><br><span class="line">5.在事件中，this 表示接收事件的元素。</span><br><span class="line">6.类似 call() 和 apply() 方法可以将 this 引用到任何对象。</span><br><span class="line">7.箭头函数本身是没有this和arguments的，引用的this实际上是调用的是定义时的上一层作用域的this。</span><br></pre></td></tr></table></figure>
 
@@ -466,47 +425,148 @@ message 绑定一个函数，函数返回true就顺利跳转，false停止跳转
 
 <h5 id="git"><a href="#git" class="headerlink" title="git"></a>git</h5><figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">git fetch是将远程主机的最新内容拉到本地，用户在检查了以后决定是否合并到工作本机分支中。</span><br><span class="line"></span><br><span class="line">而git pull 则是将远程主机的最新内容拉下来后直接合并，即：git pull = git fetch + git merge，这样可能会产生冲突，需要手动解决。</span><br><span class="line"></span><br><span class="line">git stash -m <span class="string">&#x27;message&#x27;</span> 存放暂存区</span><br><span class="line">git stash pop 暂存区弹出stash&#123;<span class="number">0</span>&#125; 并删除</span><br><span class="line">git stash list 暂存区列表</span><br><span class="line">git stash apply 序号 弹出指定序号的存储</span><br><span class="line">git stash drop 序号 删除指定序号的存储</span><br><span class="line">git stash drop 不加序号 清空</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-  </article>
-</div>
-
-
-    
-
-
-
-
-</div>
-
-<div class="footer-wrapper container">
-  <footer class="footer clearfix">
-    <div class="clearfix">
-    <a href="https://770746548.github.io" class="footer-logo">
-      <i class="fa fa-github"></i>
-    </a>
-    <ul class="footer-social-link">
-      <li>© 2019 小俊</li>
-      <li><a href="https://770746548.github.io">Home</a></li>
       
-    </ul>
-    <div class="footer-theme-info">
-      Theme <a target="_blank" rel="noopener" href="//github.com/sabrinaluo/hexo-theme-replica">Replica</a>
-      by <a target="_blank" rel="noopener" href="//github.com/sabrinaluo">Hiitea</a> ❤ Powered by Hexo
     </div>
-    </div>
+    <footer class="article-footer">
+      <a data-url="https://770746548.github.io/2023/02/21/note/" data-id="clens55z7000lzkmh0hhre6hl" data-title="react综合归类" class="article-share-link">Share</a>
+      
+      
+      
+    </footer>
+  </div>
+  
     
-    <div class="footer-pageview">
-        <a target="_blank" rel="noopener" href="https://https://770746548.github.io/flag">
-          <img src="https://https://770746548.github.io/img">
-        </a>
-    </div>
+<nav id="article-nav">
+  
+    <a href="/2023/02/28/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          🔥 计算机网络
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/02/20/MVVM%E4%B8%8EMVC/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">前端基础-MVVM设计思想</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
     
-  </footer>
-</div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/" rel="tag">前端八股文</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" rel="tag">前端基础</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/" style="font-size: 20px;">前端八股文</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">前端基础</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2023/02/28/TypeScript/">🔥 TypeScript</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/28/HTML+CSS/">🔥 HTML &amp;&amp; CSS</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/28/JavaScript/">🔥 JavaScript</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/28/react/">🔥 react</a>
+          </li>
+        
+          <li>
+            <a href="/2023/02/28/vue%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98/">🔥 vue面试专题</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2023 小俊<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
 
 
 
 
-<script src="/js/main.js"></script>
+<script src="/js/script.js"></script>
 
+
+
+
+
+  </div>
 </body>
 </html>

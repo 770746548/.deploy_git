@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>🔥 vue面试专题 | 小俊的个人博客</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Vue 面试专题简述 MVVM什么是 MVVM？ 视图模型双向绑定，是Model-View-ViewModel的缩写，也就是把MVC中的Controller演变成ViewModel。Model层代表数据模型，View代表 UI 组件，ViewModel是View和Model层的桥梁，数据会绑定到viewModel层并自动将数据渲染到页面中，视图变化的时候会通知viewModel层更新数据。以前是操">
+<meta property="og:type" content="article">
+<meta property="og:title" content="🔥 vue面试专题">
+<meta property="og:url" content="https://770746548.github.io/2024/12/28/vue%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98/index.html">
+<meta property="og:site_name" content="小俊的个人博客">
+<meta property="og:description" content="Vue 面试专题简述 MVVM什么是 MVVM？ 视图模型双向绑定，是Model-View-ViewModel的缩写，也就是把MVC中的Controller演变成ViewModel。Model层代表数据模型，View代表 UI 组件，ViewModel是View和Model层的桥梁，数据会绑定到viewModel层并自动将数据渲染到页面中，视图变化的时候会通知viewModel层更新数据。以前是操">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://gitee.com/xjxjxj123/xiaojun-personal-blog/raw/master/images/a7249773a1634f779c48f3f0ffabf968~tplv-k3u1fbpfcp-zoom-1.image">
+<meta property="article:published_time" content="2024-12-28T01:00:00.000Z">
+<meta property="article:modified_time" content="2025-04-17T07:55:46.362Z">
+<meta property="article:author" content="小俊">
+<meta property="article:tag" content="前端八股文">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://gitee.com/xjxjxj123/xiaojun-personal-blog/raw/master/images/a7249773a1634f779c48f3f0ffabf968~tplv-k3u1fbpfcp-zoom-1.image">
+  
+    <link rel="alternate" href="/atom.xml" title="小俊的个人博客" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">小俊的个人博客</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://770746548.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-vue面试专题" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2024/12/28/vue%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98/" class="article-date">
+  <time class="dt-published" datetime="2024-12-28T01:00:00.000Z" itemprop="datePublished">2024-12-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      🔥 vue面试专题
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <h2 id="Vue-面试专题"><a href="#Vue-面试专题" class="headerlink" title="Vue 面试专题"></a>Vue 面试专题</h2><h3 id="简述-MVVM"><a href="#简述-MVVM" class="headerlink" title="简述 MVVM"></a>简述 MVVM</h3><p><strong>什么是 MVVM？</strong></p>
+<p><code>视图模型双向绑定</code>，是<code>Model-View-ViewModel</code>的缩写，也就是把<code>MVC</code>中的<code>Controller</code>演变成<code>ViewModel。Model</code>层代表数据模型，<code>View</code>代表 UI 组件，<code>ViewModel</code>是<code>View</code>和<code>Model</code>层的桥梁，数据会绑定到<code>viewModel</code>层并自动将数据渲染到页面中，视图变化的时候会通知<code>viewModel</code>层更新数据。以前是操作 DOM 结构更新视图，现在是<code>数据驱动视图</code>。</p>
+<p><strong>MVVM 的优点：</strong></p>
+<p>1.<code>低耦合</code>。视图（View）可以独立于 Model 变化和修改，一个 Model 可以绑定到不同的 View 上，当 View 变化的时候 Model 可以不变化，当 Model 变化的时候 View 也可以不变；<br>2.<code>可重用性</code>。你可以把一些视图逻辑放在一个 Model 里面，让很多 View 重用这段视图逻辑。<br>3.<code>独立开发</code>。开发人员可以专注于业务逻辑和数据的开发(ViewModel)，设计人员可以专注于页面设计。<br>4.<code>可测试</code>。</p>
+<h3 id="Vue-底层实现原理"><a href="#Vue-底层实现原理" class="headerlink" title="Vue 底层实现原理"></a>Vue 底层实现原理</h3><p>vue.js 是采用数据劫持结合发布者-订阅者模式的方式，通过 Object.defineProperty()来劫持各个属性的 setter 和 getter，在数据变动时发布消息给订阅者，触发相应的监听回调<br>Vue 是一个典型的 MVVM 框架，模型（Model）只是普通的 javascript 对象，修改它则试图（View）会自动更新。这种设计让状态管理变得非常简单而直观</p>
+<p><strong>Observer（数据监听器）</strong> : Observer 的核心是通过 Object.defineProprtty()来监听数据的变动，这个函数内部可以定义 setter 和 getter，每当数据发生变化，就会触发 setter。这时候 Observer 就要通知订阅者，订阅者就是 Watcher</p>
+<p><strong>Watcher（订阅者）</strong> : Watcher 订阅者作为 Observer 和 Compile 之间通信的桥梁，主要做的事情是：</p>
+<ol>
+<li>在自身实例化时往属性订阅器(dep)里面添加自己</li>
+<li>自身必须有一个 update()方法</li>
+<li>待属性变动 dep.notice()通知时，能调用自身的 update()方法，并触发 Compile 中绑定的回调</li>
+</ol>
+<p><strong>Compile（指令解析器）</strong> : Compile 主要做的事情是解析模板指令，将模板中变量替换成数据，然后初始化渲染页面视图，并将每个指令对应的节点绑定更新函数，添加鉴定数据的订阅者，一旦数据有变动，收到通知，更新试图</p>
+<p>传送门：☞ <a target="_blank" rel="noopener" href="https://juejin.cn/post/6994959998283907102#heading-2">20 分钟吃透 Diff 算法核心原理</a></p>
+<h3 id="谈谈对-vue-生命周期的理解？"><a href="#谈谈对-vue-生命周期的理解？" class="headerlink" title="谈谈对 vue 生命周期的理解？"></a>谈谈对 vue 生命周期的理解？</h3><p>每个<code>Vue</code>实例在创建时都会经过一系列的初始化过程，<code>vue</code>的生命周期钩子，就是说在达到某一阶段或条件时去触发的函数，目的就是为了完成一些动作或者事件</p>
+<ul>
+<li><code>create阶段</code>：vue 实例被创建<br><code>beforeCreate</code>: 最初调用触发，创建前，此时 data 和 methods 中的数据都还没有初始化，data 和 events 都不能用<br><code>created</code>： 创建完毕，data 中有值，未挂载，data 和 events 已经初始化好，data 已经具有响应式；在这里可以发送请求</li>
+<li><code>mount阶段</code>： vue 实例被挂载到真实 DOM 节点<br><code>beforeMount</code>：在模版编译之后，渲染之前触发，可以发起服务端请求，去数据，ssr 中不可用，基本用不上这个 hook<br><code>mounted</code>: 在渲染之后触发，此时可以操作 DOM，并能访问组件中的 DOM 以及$ref,SSR 中不可用</li>
+<li><code>update阶段</code>：当 vue 实例里面的 data 数据变化时，触发组件的重新渲染<br><code>beforeUpdate</code> :更新前，在数据变化后，模版改变前触发，切勿使用它监听数据变化<br><code>updated</code>：更新后，在数据改变后，模版改变后触发，常用于重渲染案后的打点，性能检测或触发 vue 组件中非 vue 组件的更新</li>
+<li><code>destroy阶段</code>：vue 实例被销毁<br><code>beforeDestroy</code>：实例被销毁前，组件卸载前触发，此时可以手动销毁一些方法，可以在此时清理事件、计时器或者取消订阅操作<br><code>destroyed</code>:卸载完毕后触发，销毁后，可以做最后的打点或事件触发操作</li>
+</ul>
+<h4 id="组件生命周期"><a href="#组件生命周期" class="headerlink" title="组件生命周期"></a>组件生命周期</h4><p>生命周期（父子组件） 父组件 beforeCreate –&gt; 父组件 created –&gt; 父组件 beforeMount –&gt; 子组件 beforeCreate –&gt; 子组件 created –&gt; 子组件 beforeMount –&gt; 子组件 mounted –&gt; 父组件 mounted –&gt;父组件 beforeUpdate –&gt;子组件 beforeDestroy–&gt; 子组件 destroyed –&gt; 父组件 updated</p>
+<p><strong>加载渲染过程</strong> 父 beforeCreate-&gt;父 created-&gt;父 beforeMount-&gt;子 beforeCreate-&gt;子 created-&gt;子 beforeMount-&gt;子 mounted-&gt;父 mounted</p>
+<p><strong>挂载阶段</strong> 父 created-&gt;子 created-&gt;子 mounted-&gt;父 mounted</p>
+<p><strong>父组件更新阶段</strong> 父 beforeUpdate-&gt;父 updated</p>
+<p><strong>子组件更新阶段</strong> 父 beforeUpdate-&gt;子 beforeUpdate-&gt;子 updated-&gt;父 updated</p>
+<p><strong>销毁阶段</strong> 父 beforeDestroy-&gt;子 beforeDestroy-&gt;子 destroyed-&gt;父 destroyed</p>
+<h3 id="computed与watch"><a href="#computed与watch" class="headerlink" title="computed与watch"></a><code>computed与watch</code></h3><p>通俗来讲，既能用 computed 实现又可以用 watch 监听来实现的功能，推荐用 computed， 重点在于 computed 的缓存功能 computed 计算属性是用来声明式的描述一个值依赖了其它的值，当所依赖的值或者变量 改变时，计算属性也会跟着改变； watch 监听的是已经在 data 中定义的变量，当该变量变化时，会触发 watch 中的方法。</p>
+<p><strong>watch 属性监听</strong> 是一个对象，键是需要观察的属性，值是对应回调函数，主要用来监听某些特定数据的变化，从而进行某些具体的业务逻辑操作,监听属性的变化，需要在数据变化时执行异步或开销较大的操作时使用</p>
+<p><strong>computed 计算属性</strong> 属性的结果会被<code>缓存</code>，当<code>computed</code>中的函数所依赖的属性没有发生改变的时候，那么调用当前函数的时候结果会从缓存中读取。除非依赖的响应式属性变化时才会重新计算，主要当做属性来使用 <code>computed</code>中的函数必须用<code>return</code>返回最终的结果 <code>computed</code>更高效，优先使用。<code>data 不改变，computed 不更新。</code></p>
+<p><strong>使用场景</strong> <code>computed</code>：当一个属性受多个属性影响的时候使用，例：购物车商品结算功能 <code>watch</code>：当一条数据影响多条数据的时候使用，例：搜索数据</p>
+<h4 id="组件中的-data-为什么是一个函数？"><a href="#组件中的-data-为什么是一个函数？" class="headerlink" title="组件中的 data 为什么是一个函数？"></a>组件中的 data 为什么是一个函数？</h4><p>1.一个组件被复用多次的话，也就会创建多个实例。本质上，这些实例用的都是同一个构造函数。 2.如果 data 是对象的话，对象属于引用类型，会影响到所有的实例。所以为了保证组件不同的实例之间 data 不冲突，data 必须是一个函数。</p>
+<h4 id="为什么-v-for-和-v-if-不建议用在一起"><a href="#为什么-v-for-和-v-if-不建议用在一起" class="headerlink" title="为什么 v-for 和 v-if 不建议用在一起"></a>为什么 v-for 和 v-if 不建议用在一起</h4><p>1.当 v-for 和 v-if 处于同一个节点时，v-for 的优先级比 v-if 更高，这意味着 v-if 将分别重复运行于每个 v-for 循环中。如果要遍历的数组很大，而真正要展示的数据很少时，这将造成很大的性能浪费 2.这种场景建议使用 computed，先对数据进行过滤</p>
+<p>注意：3.x 版本中 <code>v-if</code> 总是优先于 <code>v-for</code> 生效。由于语法上存在歧义，建议避免在同一元素上同时使用两者。比起在模板层面管理相关逻辑，更好的办法是通过创建计算属性筛选出列表，并以此创建可见元素。</p>
+<p>解惑传送门 ☞ <a target="_blank" rel="noopener" href="https://v3.cn.vuejs.org/guide/migration/v-if-v-for.html#%E6%A6%82%E8%A7%88"># v-if 与 v-for 的优先级对比非兼容</a></p>
+<h3 id="React-x2F-Vue-项目中-key-的作用"><a href="#React-x2F-Vue-项目中-key-的作用" class="headerlink" title="React&#x2F;Vue 项目中 key 的作用"></a>React&#x2F;Vue 项目中 key 的作用</h3><ul>
+<li><p>key 的作用是为了在 diff 算法执行时更快的找到对应的节点，<code>提高diff速度，更高效的更新虚拟DOM</code>;</p>
+<p>vue 和 react 都是采用 diff 算法来对比新旧虚拟节点，从而更新节点。在 vue 的 diff 函数中，会根据新节点的 key 去对比旧节点数组中的 key，从而找到相应旧节点。如果没找到就认为是一个新增节点。而如果没有 key，那么就会采用遍历查找的方式去找到对应的旧节点。一种一个 map 映射，另一种是遍历查找。相比而言。map 映射的速度更快。</p>
+</li>
+<li><p>为了在数据变化时强制更新组件，以避免<code>“就地复用”</code>带来的副作用。</p>
+<p>当 Vue.js 用 <code>v-for</code> 更新已渲染过的元素列表时，它默认用“就地复用”策略。如果数据项的顺序被改变，Vue 将不会移动 DOM 元素来匹配数据项的顺序，而是简单复用此处每个元素，并且确保它在特定索引下显示已被渲染过的每个元素。重复的 key 会造成渲染错误。</p>
+</li>
+</ul>
+<h3 id="数组扁平化转换"><a href="#数组扁平化转换" class="headerlink" title="数组扁平化转换"></a>数组扁平化转换</h3><p>在说到模版编译的时候，有可能会提到数组的转换，一般就用递归处理<br>将 [1,2,3,[4,5]] 转换成</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    children:[</span><br><span class="line">        &#123;</span><br><span class="line">            value:1</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            value:2</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            value:3</span><br><span class="line">        &#125;,</span><br><span class="line">        &#123;</span><br><span class="line">            children:[</span><br><span class="line">                &#123;</span><br><span class="line">                    value:4</span><br><span class="line">                &#125;,</span><br><span class="line">                &#123;</span><br><span class="line">                    value:5</span><br><span class="line">                &#125;</span><br><span class="line">            ]</span><br><span class="line">        &#125;,</span><br><span class="line">    ]</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 测试数组</span></span><br><span class="line"><span class="keyword">var</span> arr =[<span class="number">1</span>,<span class="number">2</span>，<span class="number">3</span>，[<span class="number">4</span>,<span class="number">5</span>]];</span><br><span class="line"><span class="comment">// 转换函数</span></span><br><span class="line"><span class="keyword">function</span> <span class="title function_">convert</span>(<span class="params">arr</span>)&#123;</span><br><span class="line">    <span class="comment">//准备一个接收结果数组</span></span><br><span class="line">    <span class="keyword">var</span> result = [];</span><br><span class="line">    <span class="comment">// 遍历传入的 arr 的每一项</span></span><br><span class="line">    <span class="keyword">for</span>(<span class="keyword">let</span> i=<span class="number">0</span>;i&lt;arr.<span class="property">length</span>;i++)&#123;</span><br><span class="line">        <span class="comment">//如果遍历到的数字是number，直接放进入</span></span><br><span class="line">        <span class="keyword">if</span>(<span class="keyword">typeof</span> arr[i] == <span class="string">&#x27;number&#x27;</span>)&#123;</span><br><span class="line">            result.<span class="title function_">push</span>(&#123;</span><br><span class="line">                <span class="attr">value</span>:arr[i]</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125; <span class="keyword">else</span> <span class="keyword">if</span>(<span class="title class_">Array</span>.<span class="title function_">isArray</span>(arr[i]))&#123;</span><br><span class="line">            <span class="comment">//如果遍历到这个项目是数组，那么就递归</span></span><br><span class="line">            result.<span class="title function_">push</span>(&#123;</span><br><span class="line">                <span class="attr">children</span>: <span class="title function_">convert</span>(arr[i])</span><br><span class="line">            &#125;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> o = <span class="title function_">convert</span>(arr);</span><br><span class="line"><span class="variable language_">console</span>.<span class="title function_">log</span>(o);</span><br></pre></td></tr></table></figure>
+
+<h3 id="vue-组件的通信方式"><a href="#vue-组件的通信方式" class="headerlink" title="vue 组件的通信方式"></a>vue 组件的通信方式</h3><ul>
+<li><p><code>props</code>&#x2F;<code>$emit</code> 父子组件通信</p>
+<p>父-&gt;子<code>props</code>，子-&gt;父 <code>$on、$emit</code> 获取父子组件实例 <code>parent、children</code> <code>Ref</code>获取实例的方式调用组件的属性或者方法 父-&gt;子孙 <code>Provide、inject</code> 官方不推荐使用，但是写组件库时很常用</p>
+</li>
+<li><p><code>$emit</code>&#x2F;<code>$on</code> 自定义事件 兄弟组件通信</p>
+<p><code>Event Bus</code> 实现跨组件通信 <code>Vue.prototype.$bus = new Vue()</code> 自定义事件</p>
+</li>
+<li><p>vuex 跨级组件通信</p>
+<p>Vuex、<code>$attrs、$listeners</code> <code>Provide、inject</code></p>
+</li>
+</ul>
+<h3 id="emit-后面的两个参数是什么"><a href="#emit-后面的两个参数是什么" class="headerlink" title="$emit 后面的两个参数是什么"></a>$emit 后面的两个参数是什么</h3><p>1、父组件可以使用 props 把数据传给子组件。<br>2、子组件可以使用 $emit,让父组件监听到自定义事件 。</p>
+<p><code>vm.$emit( event, arg );</code>&#x2F;&#x2F;触发当前实例上的事件，要传递的参数<br><code>vm.$on( event, fn );</code>&#x2F;&#x2F;监听 event 事件后运行 fn；</p>
+<p>子组件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;div class=&quot;train-city&quot;&gt;</span><br><span class="line">		&lt;h3&gt;父组件传给子组件的toCity:&#123;&#123; sendData &#125;&#125;&lt;/h3&gt;</span><br><span class="line">		&lt;br /&gt;&lt;button @click=&quot;select(`大连`)&quot;&gt;点击此处将‘大连’发射给父组件&lt;/button&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line">&lt;script&gt;</span><br><span class="line">export default &#123;</span><br><span class="line">	name: &#x27;trainCity&#x27;,</span><br><span class="line">	props: [&#x27;sendData&#x27;], // 用来接收父组件传给子组件的数据</span><br><span class="line">	methods: &#123;</span><br><span class="line">		select(val) &#123;</span><br><span class="line">			let data = &#123;</span><br><span class="line">				cityName: val,</span><br><span class="line">			&#125;;</span><br><span class="line">			this.$emit(&#x27;showCityName&#x27;, data); //select事件触发后，自动触发showCityName事件</span><br><span class="line">		&#125;,</span><br><span class="line">	&#125;,</span><br><span class="line">&#125;;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<p>父组件</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">	&lt;div&gt;</span><br><span class="line">		&lt;div&gt;父组件的toCity&#123;&#123; toCity &#125;&#125;&lt;/div&gt;</span><br><span class="line">		&lt;train-city @showCityName=&quot;updateCity&quot; :sendData=&quot;toCity&quot;&gt;&lt;/train-city&gt;</span><br><span class="line">	&lt;/div&gt;</span><br><span class="line">	&lt;template&gt;</span><br><span class="line">		&lt;script&gt;</span><br><span class="line">			export default &#123;</span><br><span class="line">				name: &#x27;index&#x27;,</span><br><span class="line">				components: &#123;&#125;,</span><br><span class="line">				data() &#123;</span><br><span class="line">					return &#123;</span><br><span class="line">						toCity: &#x27;北京&#x27;,</span><br><span class="line">					&#125;;</span><br><span class="line">				&#125;,</span><br><span class="line">				methods: &#123;</span><br><span class="line">					updateCity(data) &#123;</span><br><span class="line">						//触发子组件城市选择-选择城市的事件</span><br><span class="line">						this.toCity = data.cityName; //改变了父组件的值</span><br><span class="line">						console.log(&#x27;toCity:&#x27; + this.toCity);</span><br><span class="line">					&#125;,</span><br><span class="line">				&#125;,</span><br><span class="line">			&#125;;</span><br><span class="line">		&lt;/script&gt;&lt;/template</span><br><span class="line">	&gt;&lt;/template</span><br><span class="line">&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="nextTick-的实现"><a href="#nextTick-的实现" class="headerlink" title="nextTick 的实现"></a>nextTick 的实现</h3><ol>
+<li><code>nextTick</code>是<code>Vue</code>提供的一个全局<code>API</code>,是在下次<code>DOM</code>更新循环结束之后执行延迟回调，在修改数据之后使用<code>$nextTick</code>，则可以在回调中获取更新后的<code>DOM</code>；</li>
+<li>Vue 在更新 DOM 时是异步执行的。只要侦听到数据变化，<code>Vue</code>将开启 1 个队列，并缓冲在同一事件循环中发生的所有数据变更。如果同一个<code>watcher</code>被多次触发，只会被推入到队列中-次。这种在缓冲时去除重复数据对于避免不必要的计算和<code>DOM</code>操作是非常重要的。<code>nextTick</code>方法会在队列中加入一个回调函数，确保该函数在前面的 dom 操作完成后才调用；</li>
+<li>比如，我在干什么的时候就会使用 nextTick，传一个回调函数进去，在里面执行 dom 操作即可；</li>
+<li>我也有简单了解<code>nextTick</code>实现，它会在<code>callbacks</code>里面加入我们传入的函数，然后用<code>timerFunc</code>异步方式调用它们，首选的异步方式会是<code>Promise</code>。这让我明白了为什么可以在<code>nextTick</code>中看到<code>dom</code>操作结果。</li>
+</ol>
+<h3 id="nextTick-的实现原理是什么？"><a href="#nextTick-的实现原理是什么？" class="headerlink" title="nextTick 的实现原理是什么？"></a>nextTick 的实现原理是什么？</h3><p>在下次 DOM 更新循环结束之后执行延迟回调，在修改数据之后立即使用 nextTick 来获取更新后的 DOM。 nextTick 主要使用了宏任务和微任务。 根据执行环境分别尝试采用 Promise、MutationObserver、setImmediate，如果以上都不行则采用 setTimeout 定义了一个异步方法，多次调用 nextTick 会将方法存入队列中，通过这个异步方法清空当前队列。</p>
+<h3 id="使用过插槽么？用的是具名插槽还是匿名插槽或作用域插槽"><a href="#使用过插槽么？用的是具名插槽还是匿名插槽或作用域插槽" class="headerlink" title="使用过插槽么？用的是具名插槽还是匿名插槽或作用域插槽"></a>使用过插槽么？用的是具名插槽还是匿名插槽或作用域插槽</h3><p>vue 中的插槽是一个非常好用的东西 slot 说白了就是一个占位的 在 vue 当中插槽包含三种一种是默认插槽（匿名）一种是具名插槽还有一种就是作用域插槽 匿名插槽就是没有名字的只要默认的都填到这里具名插槽指的是具有名字的</p>
+<h3 id="keep-alive-的实现"><a href="#keep-alive-的实现" class="headerlink" title="keep-alive 的实现"></a>keep-alive 的实现</h3><p>keep-alive 是 Vue.js 的一个内置组件。它能够不活动的组件实例保存在内存中，而不是直接将其销毁，它是一个抽象组件，不会被渲染到真实 DOM 中，也不会出现在父组件链中。</p>
+<p>作用：实现组件缓存，保持这些组件的状态，以避免反复渲染导致的性能问题。 需要缓存组件 频繁切换，不需要重复渲染</p>
+<p>场景：tabs 标签页 后台导航，vue 性能优化</p>
+<p>原理：<code>Vue.js</code>内部将<code>DOM</code>节点抽象成了一个个的<code>VNode</code>节点，<code>keep-alive</code>组件的缓存也是基于<code>VNode</code>节点的而不是直接存储<code>DOM</code>结构。它将满足条件<code>（pruneCache与pruneCache）</code>的组件在<code>cache</code>对象中缓存起来，在需要重新渲染的时候再将<code>vnode</code>节点从<code>cache</code>对象中取出并渲染。</p>
+<h3 id="keep-alive-的属性"><a href="#keep-alive-的属性" class="headerlink" title="keep-alive 的属性"></a>keep-alive 的属性</h3><p>它提供了 include 与 exclude 两个属性，允许组件有条件地进行缓存。</p>
+<p>include 定义缓存白名单，keep-alive 会缓存命中的组件；exclude 定义缓存黑名单，被命中的组件将不会被缓存；max 定义缓存组件上限，超出上限使用 LRU 的策略置换缓存数据。</p>
+<p>在动态组件中的应用</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;keep-alive :include=<span class="string">&quot;whiteList&quot;</span> :exclude=<span class="string">&quot;blackList&quot;</span> :max=<span class="string">&quot;amount&quot;</span>&gt;</span><br><span class="line">     <span class="language-xml"><span class="tag">&lt;<span class="name">component</span> <span class="attr">:is</span>=<span class="string">&quot;currentComponent&quot;</span>&gt;</span><span class="tag">&lt;/<span class="name">component</span>&gt;</span></span></span><br><span class="line">&lt;/keep-alive&gt;</span><br></pre></td></tr></table></figure>
+
+<p>在 vue-router 中的应用</p>
+<figure class="highlight js"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;keep-alive :include=<span class="string">&quot;whiteList&quot;</span> :exclude=<span class="string">&quot;blackList&quot;</span> :max=<span class="string">&quot;amount&quot;</span>&gt;</span><br><span class="line">    <span class="language-xml"><span class="tag">&lt;<span class="name">router-view</span>&gt;</span><span class="tag">&lt;/<span class="name">router-view</span>&gt;</span></span></span><br><span class="line">&lt;/keep-alive&gt;</span><br></pre></td></tr></table></figure>
+
+<p>vue 中完整示例</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&lt;keep-alive&gt;</span><br><span class="line">    &lt;coma v-if=&quot;test&quot;&gt;&lt;/coma&gt;</span><br><span class="line">    &lt;comb v-else=&quot;test&quot;&gt;&lt;/comb&gt;</span><br><span class="line">&lt;/keep-alive&gt;</span><br><span class="line">&lt;button @click=&quot;test=handleClick&quot;&gt;请点击&lt;/button&gt;</span><br><span class="line"></span><br><span class="line">export default &#123;</span><br><span class="line">    data () &#123;</span><br><span class="line">        return &#123;</span><br><span class="line">            test: true</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;,</span><br><span class="line">    methods: &#123;</span><br><span class="line">        handleClick () &#123;</span><br><span class="line">            this.test = !this.test;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>参考:<br><a target="_blank" rel="noopener" href="https://cn.vuejs.org/v2/api/#keep-alive">keep-alive 官网</a></p>
+<p><a target="_blank" rel="noopener" href="https://www.jianshu.com/p/9523bb439950">keep-alive 实现原理</a></p>
+<p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_38189842/article/details/103999989">Vue keep-alive 的实现原理</a></p>
+<h3 id="mixin"><a href="#mixin" class="headerlink" title="mixin"></a>mixin</h3><p>mixin 项目变得复杂的时候，多个组件间有重复的逻辑就会用到 mixin<br>多个组件有相同的逻辑，抽离出来<br>mixin 并不是完美的解决方案，会有一些问题<br>vue3 提出的 Composition API 旨在解决这些问题【追求完美是要消耗一定的成本的，如开发成本】<br>场景：PC 端新闻列表和详情页一样的右侧栏目，可以使用 mixin 进行混合<br>劣势：1.变量来源不明确，不利于阅读 2.多 mixin 可能会造成命名冲突 3.mixin 和组件可能出现多对多的关系，使得项目复杂度变高</p>
+<h3 id="vue-如何实现模拟-v-model-指令"><a href="#vue-如何实现模拟-v-model-指令" class="headerlink" title="vue 如何实现模拟 v-model 指令"></a>vue 如何实现模拟 v-model 指令</h3><p>可以使用 vue 自定义指令 Vue.directive() 模拟</p>
+<p>具体参考：<a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_39157944/article/details/106262546">vue 自定义指令模拟 v-model 指令</a></p>
+<h3 id="如何实现-v-model-说下思路"><a href="#如何实现-v-model-说下思路" class="headerlink" title="如何实现 v-model,说下思路"></a>如何实现 v-model,说下思路</h3><h3 id="Vue-Router-相关"><a href="#Vue-Router-相关" class="headerlink" title="Vue Router 相关"></a>Vue Router 相关</h3><h3 id="Vuex-的理解及使用场景"><a href="#Vuex-的理解及使用场景" class="headerlink" title="Vuex 的理解及使用场景"></a>Vuex 的理解及使用场景</h3><p>Vuex 是一个专为 Vue 应用程序开发的状态管理模式。每一个 Vuex 应用的核心就是 store（仓库）。</p>
+<ol>
+<li>Vuex 的状态存储是响应式的；当 Vue 组件从 store 中读取状态的时候，</li>
+</ol>
+<p>若 store 中的状态发生变化，那么相应的组件也会相应地得到高效更新 2. 改变 store 中的状态的唯一途径就是显式地提交 (commit) mutation， 这样使得我们可以方便地跟踪每一个状态的变化 Vuex 主要包括以下几个核心模块：</p>
+<ol>
+<li>State：定义了应用的状态数据</li>
+<li>Getter：在 store 中定义“getter”（可以认为是 store 的计算属性），</li>
+</ol>
+<p>就像计算属性一样，getter 的返回值会根据它的依赖被缓存起来， 且只有当它的依赖值发生了改变才会被重新计算 3. Mutation：是唯一更改 store 中状态的方法，且必须是同步函数 4. Action：用于提交 mutation，而不是直接变更状态，可以包含任意异步操作 5. Module：允许将单一的 Store 拆分为多个 store 且同时保存在单一的状态树中</p>
+<p><img src="https://gitee.com/xjxjxj123/xiaojun-personal-blog/raw/master/images/a7249773a1634f779c48f3f0ffabf968~tplv-k3u1fbpfcp-zoom-1.image"></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://770746548.github.io/2024/12/28/vue%E9%9D%A2%E8%AF%95%E4%B8%93%E9%A2%98/" data-id="cm9l2g8fd000g2kz3dlqoajdz" data-title="🔥 vue面试专题" class="article-share-link">Share</a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/" rel="tag">前端八股文</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2025/02/10/%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          2025-02-10个人博客诞生了
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2023/02/28/TypeScript/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">🔥 TypeScript</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/" rel="tag">前端八股文</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" rel="tag">前端基础</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/%E5%89%8D%E7%AB%AF%E5%85%AB%E8%82%A1%E6%96%87/" style="font-size: 20px;">前端八股文</a> <a href="/tags/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80/" style="font-size: 10px;">前端基础</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/03/">March 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2025/02/">February 2025</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2024/12/">December 2024</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2023/02/">February 2023</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2025/03/19/%E9%A5%BF%E4%BA%86%E4%B9%88%E7%BB%84%E4%BB%B6%E5%BA%93%E8%B8%A9%E5%9D%91/">element-ui踩坑点</a>
+          </li>
+        
+          <li>
+            <a href="/2025/02/28/HTML+CSS/">🔥 HTML &amp;&amp; CSS</a>
+          </li>
+        
+          <li>
+            <a href="/2025/02/28/JavaScript/">🔥 JavaScript</a>
+          </li>
+        
+          <li>
+            <a href="/2025/02/28/react/">🔥 react</a>
+          </li>
+        
+          <li>
+            <a href="/2025/02/28/%E6%B5%8F%E8%A7%88%E5%99%A8/">🔥 浏览器</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 小俊<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.4.1.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
